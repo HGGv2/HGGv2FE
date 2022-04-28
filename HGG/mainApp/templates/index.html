@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% load static %}
+
+<h1>HELLO</h1>
+
+<button>
+  {% block content %}
+  <a href="{% url 'category' %}">카테고리 페이지로 이동하기</a>
+  {% endblock%}
+</button>
